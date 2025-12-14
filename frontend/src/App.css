@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Default background */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.5s ease;
+}
+
+/* Weather backgrounds */
+.app-container.default {
+  background: linear-gradient(135deg, #e0e7ff, #f8fafc);
+}
+
+.app-container.clear {
+  background: linear-gradient(135deg, #60a5fa, #93c5fd);
+}
+
+.app-container.clouds {
+  background: linear-gradient(135deg, #9ca3af, #d1d5db);
+}
+
+.app-container.rain {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+}
+
+.app-container.snow {
+  background: linear-gradient(135deg, #e5e7eb, #f9fafb);
+}
+
+/* Card */
+.card {
+  background: white;
+  padding: 30px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.input-group button {
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+}
+
+.input-group button:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+.response-box {
+  margin-top: 20px;
+  min-height: 40px;
+}
+
+.response-box p {
+  background: #f1f5f9;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.loading-text {
+  font-style: italic;
+  color: #555;
+}
+
+.footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #444;
+}
