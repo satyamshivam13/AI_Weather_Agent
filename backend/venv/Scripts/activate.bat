@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\Asus\Downloads\sanchai-weather-agent-updated (1)\backend\venv
+set VIRTUAL_ENV=C:\Users\Asus\OneDrive\Desktop\Sanchi_Assignment\backend\venv
 
 if not defined PROMPT set PROMPT=$P$G
 

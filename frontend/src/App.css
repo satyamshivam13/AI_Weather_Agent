@@ -7,7 +7,7 @@ body {
   font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* Default background */
+
 .app-container {
   min-height: 100vh;
   display: flex;
@@ -17,7 +17,6 @@ body {
   transition: background 0.5s ease;
 }
 
-/* Weather backgrounds */
 .app-container.default {
   background: linear-gradient(135deg, #e0e7ff, #f8fafc);
 }
@@ -38,7 +37,6 @@ body {
   background: linear-gradient(135deg, #e5e7eb, #f9fafb);
 }
 
-/* Card */
 .card {
   background: white;
   padding: 30px;

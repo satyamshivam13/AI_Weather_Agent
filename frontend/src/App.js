@@ -34,7 +34,6 @@ function App() {
       const data = await res.json();
       setReply(data.reply);
 
-      // Change background based on weather
       const type = detectWeatherType(data.reply);
       setWeatherType(type);
 
@@ -49,9 +48,9 @@ function App() {
   return (
     <div className={`app-container ${weatherType}`}>
       <div className="card">
-        <h2 className="title">🌤️ SanchAI Weather Agent</h2>
+        <h2 className="title"> SkySense AI</h2>
         <p className="subtitle">
-          Ask weather by city name or simple questions
+          Ask weather by city
         </p>
 
         <div className="input-group">
@@ -68,7 +67,7 @@ function App() {
 
         <div className="response-box">
           {reply && <p>{reply}</p>}
-          {loading && <p className="loading-text">Fetching weather...</p>}
+          {loading && <p className="loading-text">Loading...</p>}
         </div>
       </div>
 
